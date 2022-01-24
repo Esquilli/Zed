@@ -1,0 +1,945 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18023ED42798BCDF00DD92E5 /* ZedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18023ED32798BCDF00DD92E5 /* ZedApp.swift */; };
+		18023ED62798BCDF00DD92E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18023ED52798BCDF00DD92E5 /* ContentView.swift */; };
+		18023ED82798BCE100DD92E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18023ED72798BCE100DD92E5 /* Assets.xcassets */; };
+		18023EDB2798BCE100DD92E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18023EDA2798BCE100DD92E5 /* Preview Assets.xcassets */; };
+		18023EDD2798BCE100DD92E5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18023EDC2798BCE100DD92E5 /* Persistence.swift */; };
+		18023EE02798BCE100DD92E5 /* Zed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18023EDE2798BCE100DD92E5 /* Zed.xcdatamodeld */; };
+		18023EEA2798BCE100DD92E5 /* ZedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18023EE92798BCE100DD92E5 /* ZedTests.swift */; };
+		18023EF42798BCE100DD92E5 /* ZedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18023EF32798BCE100DD92E5 /* ZedUITests.swift */; };
+		18023EF62798BCE100DD92E5 /* ZedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18023EF52798BCE100DD92E5 /* ZedUITestsLaunchTests.swift */; };
+		183CCAB12799CE5E00970237 /* ChampionsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CCAB02799CE5E00970237 /* ChampionsRepository.swift */; };
+		183CCAB32799E34D00970237 /* ChampionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CCAB22799E34D00970237 /* ChampionView.swift */; };
+		183CCAB52799E4CA00970237 /* ChampionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183CCAB42799E4CA00970237 /* ChampionsListView.swift */; };
+		189AC2B4279AF42E00CB0A5F /* View+ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189AC2B3279AF42E00CB0A5F /* View+ViewModifiers.swift */; };
+		189AC2B7279AF43E00CB0A5F /* EmptyStateViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189AC2B6279AF43E00CB0A5F /* EmptyStateViewModifier.swift */; };
+		18ED0D062798BDDB00AC0521 /* Endpoint+Stripe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED0CF42798BDDB00AC0521 /* Endpoint+Stripe.swift */; };
+		18ED0D072798BDDB00AC0521 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED0CF52798BDDB00AC0521 /* NetworkService.swift */; };
+		18ED0D082798BDDB00AC0521 /* CheckoutResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED0CF72798BDDB00AC0521 /* CheckoutResponse.swift */; };
+		18ED0D092798BDDB00AC0521 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED0CF82798BDDB00AC0521 /* Endpoint.swift */; };
+		18ED0D0A2798BDDB00AC0521 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED0CFA2798BDDB00AC0521 /* LoadingState.swift */; };
+		18ED0D0B2798BDDB00AC0521 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED0CFC2798BDDB00AC0521 /* NetworkError.swift */; };
+		18ED0D0D2798BDDB00AC0521 /* RiotRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED0CFF2798BDDB00AC0521 /* RiotRepository.swift */; };
+		18ED0D0E2798BDDB00AC0521 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED0D022798BDDB00AC0521 /* HomeViewModel.swift */; };
+		18ED0D0F2798BDDB00AC0521 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED0D032798BDDB00AC0521 /* HomeView.swift */; };
+		18ED0D102798BDDB00AC0521 /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ED0D052798BDDB00AC0521 /* StateView.swift */; };
+		24214319E3110FA6C38FF11A /* Pods_Zed_ZedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E177D809998CAA96F903F5D2 /* Pods_Zed_ZedUITests.framework */; };
+		8E227F9CE5209C88DDDCD8CB /* Pods_Zed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CE8D08297A85929F85BE644 /* Pods_Zed.framework */; };
+		D40B0AB716350811B164EE60 /* Pods_ZedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A20FCEB91052CAADA3FB495 /* Pods_ZedTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18023EE62798BCE100DD92E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18023EC82798BCDF00DD92E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18023ECF2798BCDF00DD92E5;
+			remoteInfo = Zed;
+		};
+		18023EF02798BCE100DD92E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18023EC82798BCDF00DD92E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18023ECF2798BCDF00DD92E5;
+			remoteInfo = Zed;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09E8D5EF94C2F22C0DCEE0EC /* Pods-Zed-ZedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zed-ZedUITests.debug.xcconfig"; path = "Target Support Files/Pods-Zed-ZedUITests/Pods-Zed-ZedUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		18023ED02798BCDF00DD92E5 /* Zed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18023ED32798BCDF00DD92E5 /* ZedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZedApp.swift; sourceTree = "<group>"; };
+		18023ED52798BCDF00DD92E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		18023ED72798BCE100DD92E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18023EDA2798BCE100DD92E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18023EDC2798BCE100DD92E5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		18023EDF2798BCE100DD92E5 /* Zed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Zed.xcdatamodel; sourceTree = "<group>"; };
+		18023EE52798BCE100DD92E5 /* ZedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18023EE92798BCE100DD92E5 /* ZedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZedTests.swift; sourceTree = "<group>"; };
+		18023EEF2798BCE100DD92E5 /* ZedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18023EF32798BCE100DD92E5 /* ZedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZedUITests.swift; sourceTree = "<group>"; };
+		18023EF52798BCE100DD92E5 /* ZedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		183CCAB02799CE5E00970237 /* ChampionsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsRepository.swift; sourceTree = "<group>"; };
+		183CCAB22799E34D00970237 /* ChampionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionView.swift; sourceTree = "<group>"; };
+		183CCAB42799E4CA00970237 /* ChampionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChampionsListView.swift; sourceTree = "<group>"; };
+		189AC2B3279AF42E00CB0A5F /* View+ViewModifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+ViewModifiers.swift"; sourceTree = "<group>"; };
+		189AC2B6279AF43E00CB0A5F /* EmptyStateViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyStateViewModifier.swift; sourceTree = "<group>"; };
+		18ED0CF42798BDDB00AC0521 /* Endpoint+Stripe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Endpoint+Stripe.swift"; sourceTree = "<group>"; };
+		18ED0CF52798BDDB00AC0521 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		18ED0CF72798BDDB00AC0521 /* CheckoutResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutResponse.swift; sourceTree = "<group>"; };
+		18ED0CF82798BDDB00AC0521 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		18ED0CFA2798BDDB00AC0521 /* LoadingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
+		18ED0CFC2798BDDB00AC0521 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		18ED0CFF2798BDDB00AC0521 /* RiotRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiotRepository.swift; sourceTree = "<group>"; };
+		18ED0D022798BDDB00AC0521 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		18ED0D032798BDDB00AC0521 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		18ED0D052798BDDB00AC0521 /* StateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
+		3CE8D08297A85929F85BE644 /* Pods_Zed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4165E9F447E81CC904008109 /* Pods-Zed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zed.release.xcconfig"; path = "Target Support Files/Pods-Zed/Pods-Zed.release.xcconfig"; sourceTree = "<group>"; };
+		5CD21CBECE8C4C69FD327771 /* Pods-Zed-ZedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zed-ZedUITests.release.xcconfig"; path = "Target Support Files/Pods-Zed-ZedUITests/Pods-Zed-ZedUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6A20FCEB91052CAADA3FB495 /* Pods_ZedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZedTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E581563D44A7CDB48BD2F5E /* Pods-ZedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZedTests.debug.xcconfig"; path = "Target Support Files/Pods-ZedTests/Pods-ZedTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B7A8A0BC337145D23FE5BB79 /* Pods-ZedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZedTests.release.xcconfig"; path = "Target Support Files/Pods-ZedTests/Pods-ZedTests.release.xcconfig"; sourceTree = "<group>"; };
+		DDB06917A1F820B91120C035 /* Pods-Zed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zed.debug.xcconfig"; path = "Target Support Files/Pods-Zed/Pods-Zed.debug.xcconfig"; sourceTree = "<group>"; };
+		E177D809998CAA96F903F5D2 /* Pods_Zed_ZedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zed_ZedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18023ECD2798BCDF00DD92E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E227F9CE5209C88DDDCD8CB /* Pods_Zed.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18023EE22798BCE100DD92E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40B0AB716350811B164EE60 /* Pods_ZedTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18023EEC2798BCE100DD92E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24214319E3110FA6C38FF11A /* Pods_Zed_ZedUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18023EC72798BCDF00DD92E5 = {
+			isa = PBXGroup;
+			children = (
+				18023ED22798BCDF00DD92E5 /* Zed */,
+				18023EE82798BCE100DD92E5 /* ZedTests */,
+				18023EF22798BCE100DD92E5 /* ZedUITests */,
+				18023ED12798BCDF00DD92E5 /* Products */,
+				DDBA5F1A892958E895497C2F /* Pods */,
+				45F5A1992FEC508A2BB8E0F8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18023ED12798BCDF00DD92E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18023ED02798BCDF00DD92E5 /* Zed.app */,
+				18023EE52798BCE100DD92E5 /* ZedTests.xctest */,
+				18023EEF2798BCE100DD92E5 /* ZedUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18023ED22798BCDF00DD92E5 /* Zed */ = {
+			isa = PBXGroup;
+			children = (
+				18023F032798BD4D00DD92E5 /* App */,
+				18ED0CF12798BDDB00AC0521 /* Core */,
+				18ED0D002798BDDB00AC0521 /* Presentation */,
+				18ED0CFE2798BDDB00AC0521 /* Repositories */,
+				183CCAC52799FA6A00970237 /* Extensions */,
+				18023F022798BD4200DD92E5 /* Supporting Files */,
+			);
+			path = Zed;
+			sourceTree = "<group>";
+		};
+		18023ED92798BCE100DD92E5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				18023EDA2798BCE100DD92E5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18023EE82798BCE100DD92E5 /* ZedTests */ = {
+			isa = PBXGroup;
+			children = (
+				18023EE92798BCE100DD92E5 /* ZedTests.swift */,
+			);
+			path = ZedTests;
+			sourceTree = "<group>";
+		};
+		18023EF22798BCE100DD92E5 /* ZedUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18023EF32798BCE100DD92E5 /* ZedUITests.swift */,
+				18023EF52798BCE100DD92E5 /* ZedUITestsLaunchTests.swift */,
+			);
+			path = ZedUITests;
+			sourceTree = "<group>";
+		};
+		18023F022798BD4200DD92E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18023ED72798BCE100DD92E5 /* Assets.xcassets */,
+				18023ED92798BCE100DD92E5 /* Preview Content */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18023F032798BD4D00DD92E5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				18023ED52798BCDF00DD92E5 /* ContentView.swift */,
+				18023ED32798BCDF00DD92E5 /* ZedApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		183CCAC52799FA6A00970237 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				189AC2B3279AF42E00CB0A5F /* View+ViewModifiers.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		189AC2B5279AF43E00CB0A5F /* View Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				189AC2B6279AF43E00CB0A5F /* EmptyStateViewModifier.swift */,
+			);
+			path = "View Modifiers";
+			sourceTree = "<group>";
+		};
+		18ED0CF12798BDDB00AC0521 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				18ED0D112798BDE500AC0521 /* Persistence */,
+				18ED0CF22798BDDB00AC0521 /* Networking */,
+				18ED0CF92798BDDB00AC0521 /* States */,
+				18ED0CFB2798BDDB00AC0521 /* Errors */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		18ED0CF22798BDDB00AC0521 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				18ED0CF62798BDDB00AC0521 /* Models */,
+				18ED0CF32798BDDB00AC0521 /* Endpoints */,
+				18ED0CF52798BDDB00AC0521 /* NetworkService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		18ED0CF32798BDDB00AC0521 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				18ED0CF42798BDDB00AC0521 /* Endpoint+Stripe.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		18ED0CF62798BDDB00AC0521 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18ED0CF72798BDDB00AC0521 /* CheckoutResponse.swift */,
+				18ED0CF82798BDDB00AC0521 /* Endpoint.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18ED0CF92798BDDB00AC0521 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				18ED0CFA2798BDDB00AC0521 /* LoadingState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		18ED0CFB2798BDDB00AC0521 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				18ED0CFC2798BDDB00AC0521 /* NetworkError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		18ED0CFE2798BDDB00AC0521 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				18ED0CFF2798BDDB00AC0521 /* RiotRepository.swift */,
+				183CCAB02799CE5E00970237 /* ChampionsRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		18ED0D002798BDDB00AC0521 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				189AC2B5279AF43E00CB0A5F /* View Modifiers */,
+				18ED0D012798BDDB00AC0521 /* Home */,
+				18ED0D042798BDDB00AC0521 /* Components */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		18ED0D012798BDDB00AC0521 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				18ED0D022798BDDB00AC0521 /* HomeViewModel.swift */,
+				18ED0D032798BDDB00AC0521 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		18ED0D042798BDDB00AC0521 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				18ED0D052798BDDB00AC0521 /* StateView.swift */,
+				183CCAB22799E34D00970237 /* ChampionView.swift */,
+				183CCAB42799E4CA00970237 /* ChampionsListView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		18ED0D112798BDE500AC0521 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				18023EDE2798BCE100DD92E5 /* Zed.xcdatamodeld */,
+				18023EDC2798BCE100DD92E5 /* Persistence.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		45F5A1992FEC508A2BB8E0F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CE8D08297A85929F85BE644 /* Pods_Zed.framework */,
+				E177D809998CAA96F903F5D2 /* Pods_Zed_ZedUITests.framework */,
+				6A20FCEB91052CAADA3FB495 /* Pods_ZedTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDBA5F1A892958E895497C2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDB06917A1F820B91120C035 /* Pods-Zed.debug.xcconfig */,
+				4165E9F447E81CC904008109 /* Pods-Zed.release.xcconfig */,
+				09E8D5EF94C2F22C0DCEE0EC /* Pods-Zed-ZedUITests.debug.xcconfig */,
+				5CD21CBECE8C4C69FD327771 /* Pods-Zed-ZedUITests.release.xcconfig */,
+				8E581563D44A7CDB48BD2F5E /* Pods-ZedTests.debug.xcconfig */,
+				B7A8A0BC337145D23FE5BB79 /* Pods-ZedTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18023ECF2798BCDF00DD92E5 /* Zed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18023EF92798BCE100DD92E5 /* Build configuration list for PBXNativeTarget "Zed" */;
+			buildPhases = (
+				B4082C17CB7DE48E816470AA /* [CP] Check Pods Manifest.lock */,
+				18023ECC2798BCDF00DD92E5 /* Sources */,
+				18023ECD2798BCDF00DD92E5 /* Frameworks */,
+				18023ECE2798BCDF00DD92E5 /* Resources */,
+				161BC781A3EF92A8C8098F78 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zed;
+			productName = Zed;
+			productReference = 18023ED02798BCDF00DD92E5 /* Zed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18023EE42798BCE100DD92E5 /* ZedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18023EFC2798BCE100DD92E5 /* Build configuration list for PBXNativeTarget "ZedTests" */;
+			buildPhases = (
+				BEDB90970B0707B22F8E691C /* [CP] Check Pods Manifest.lock */,
+				18023EE12798BCE100DD92E5 /* Sources */,
+				18023EE22798BCE100DD92E5 /* Frameworks */,
+				18023EE32798BCE100DD92E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18023EE72798BCE100DD92E5 /* PBXTargetDependency */,
+			);
+			name = ZedTests;
+			productName = ZedTests;
+			productReference = 18023EE52798BCE100DD92E5 /* ZedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18023EEE2798BCE100DD92E5 /* ZedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18023EFF2798BCE100DD92E5 /* Build configuration list for PBXNativeTarget "ZedUITests" */;
+			buildPhases = (
+				6AA356784CF6A513BCFCF054 /* [CP] Check Pods Manifest.lock */,
+				18023EEB2798BCE100DD92E5 /* Sources */,
+				18023EEC2798BCE100DD92E5 /* Frameworks */,
+				18023EED2798BCE100DD92E5 /* Resources */,
+				801B361A4D38F5BDF53BD4B0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18023EF12798BCE100DD92E5 /* PBXTargetDependency */,
+			);
+			name = ZedUITests;
+			productName = ZedUITests;
+			productReference = 18023EEF2798BCE100DD92E5 /* ZedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18023EC82798BCDF00DD92E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					18023ECF2798BCDF00DD92E5 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					18023EE42798BCE100DD92E5 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 18023ECF2798BCDF00DD92E5;
+					};
+					18023EEE2798BCE100DD92E5 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 18023ECF2798BCDF00DD92E5;
+					};
+				};
+			};
+			buildConfigurationList = 18023ECB2798BCDF00DD92E5 /* Build configuration list for PBXProject "Zed" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18023EC72798BCDF00DD92E5;
+			productRefGroup = 18023ED12798BCDF00DD92E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18023ECF2798BCDF00DD92E5 /* Zed */,
+				18023EE42798BCE100DD92E5 /* ZedTests */,
+				18023EEE2798BCE100DD92E5 /* ZedUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18023ECE2798BCDF00DD92E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18023EDB2798BCE100DD92E5 /* Preview Assets.xcassets in Resources */,
+				18023ED82798BCE100DD92E5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18023EE32798BCE100DD92E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18023EED2798BCE100DD92E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		161BC781A3EF92A8C8098F78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zed/Pods-Zed-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zed/Pods-Zed-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zed/Pods-Zed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AA356784CF6A513BCFCF054 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zed-ZedUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		801B361A4D38F5BDF53BD4B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zed-ZedUITests/Pods-Zed-ZedUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zed-ZedUITests/Pods-Zed-ZedUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zed-ZedUITests/Pods-Zed-ZedUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4082C17CB7DE48E816470AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEDB90970B0707B22F8E691C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZedTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18023ECC2798BCDF00DD92E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18ED0D0D2798BDDB00AC0521 /* RiotRepository.swift in Sources */,
+				18ED0D0F2798BDDB00AC0521 /* HomeView.swift in Sources */,
+				183CCAB12799CE5E00970237 /* ChampionsRepository.swift in Sources */,
+				18ED0D062798BDDB00AC0521 /* Endpoint+Stripe.swift in Sources */,
+				183CCAB52799E4CA00970237 /* ChampionsListView.swift in Sources */,
+				18ED0D082798BDDB00AC0521 /* CheckoutResponse.swift in Sources */,
+				189AC2B7279AF43E00CB0A5F /* EmptyStateViewModifier.swift in Sources */,
+				18ED0D092798BDDB00AC0521 /* Endpoint.swift in Sources */,
+				18023EDD2798BCE100DD92E5 /* Persistence.swift in Sources */,
+				183CCAB32799E34D00970237 /* ChampionView.swift in Sources */,
+				18023ED62798BCDF00DD92E5 /* ContentView.swift in Sources */,
+				18023ED42798BCDF00DD92E5 /* ZedApp.swift in Sources */,
+				18ED0D0E2798BDDB00AC0521 /* HomeViewModel.swift in Sources */,
+				189AC2B4279AF42E00CB0A5F /* View+ViewModifiers.swift in Sources */,
+				18ED0D0A2798BDDB00AC0521 /* LoadingState.swift in Sources */,
+				18ED0D072798BDDB00AC0521 /* NetworkService.swift in Sources */,
+				18ED0D102798BDDB00AC0521 /* StateView.swift in Sources */,
+				18023EE02798BCE100DD92E5 /* Zed.xcdatamodeld in Sources */,
+				18ED0D0B2798BDDB00AC0521 /* NetworkError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18023EE12798BCE100DD92E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18023EEA2798BCE100DD92E5 /* ZedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18023EEB2798BCE100DD92E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18023EF62798BCE100DD92E5 /* ZedUITestsLaunchTests.swift in Sources */,
+				18023EF42798BCE100DD92E5 /* ZedUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18023EE72798BCE100DD92E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18023ECF2798BCDF00DD92E5 /* Zed */;
+			targetProxy = 18023EE62798BCE100DD92E5 /* PBXContainerItemProxy */;
+		};
+		18023EF12798BCE100DD92E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18023ECF2798BCDF00DD92E5 /* Zed */;
+			targetProxy = 18023EF02798BCE100DD92E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18023EF72798BCE100DD92E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18023EF82798BCE100DD92E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18023EFA2798BCE100DD92E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDB06917A1F820B91120C035 /* Pods-Zed.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Zed/Supporting Files/Preview Content\"";
+				DEVELOPMENT_TEAM = L4CX4QKSV5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esquilli.Zed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18023EFB2798BCE100DD92E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4165E9F447E81CC904008109 /* Pods-Zed.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Zed/Supporting Files/Preview Content\"";
+				DEVELOPMENT_TEAM = L4CX4QKSV5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esquilli.Zed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18023EFD2798BCE100DD92E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E581563D44A7CDB48BD2F5E /* Pods-ZedTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L4CX4QKSV5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esquilli.ZedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zed.app/Zed";
+			};
+			name = Debug;
+		};
+		18023EFE2798BCE100DD92E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7A8A0BC337145D23FE5BB79 /* Pods-ZedTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L4CX4QKSV5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esquilli.ZedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zed.app/Zed";
+			};
+			name = Release;
+		};
+		18023F002798BCE100DD92E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09E8D5EF94C2F22C0DCEE0EC /* Pods-Zed-ZedUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L4CX4QKSV5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esquilli.ZedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zed;
+			};
+			name = Debug;
+		};
+		18023F012798BCE100DD92E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CD21CBECE8C4C69FD327771 /* Pods-Zed-ZedUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L4CX4QKSV5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esquilli.ZedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zed;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18023ECB2798BCDF00DD92E5 /* Build configuration list for PBXProject "Zed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18023EF72798BCE100DD92E5 /* Debug */,
+				18023EF82798BCE100DD92E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18023EF92798BCE100DD92E5 /* Build configuration list for PBXNativeTarget "Zed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18023EFA2798BCE100DD92E5 /* Debug */,
+				18023EFB2798BCE100DD92E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18023EFC2798BCE100DD92E5 /* Build configuration list for PBXNativeTarget "ZedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18023EFD2798BCE100DD92E5 /* Debug */,
+				18023EFE2798BCE100DD92E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18023EFF2798BCE100DD92E5 /* Build configuration list for PBXNativeTarget "ZedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18023F002798BCE100DD92E5 /* Debug */,
+				18023F012798BCE100DD92E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18023EDE2798BCE100DD92E5 /* Zed.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18023EDF2798BCE100DD92E5 /* Zed.xcdatamodel */,
+			);
+			currentVersion = 18023EDF2798BCE100DD92E5 /* Zed.xcdatamodel */;
+			path = Zed.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 18023EC82798BCDF00DD92E5 /* Project object */;
+}

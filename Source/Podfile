@@ -1,0 +1,16 @@
+platform :ios, '15.0'
+
+target 'Zed' do
+  use_frameworks!
+    
+  # Pods for Zed
+  pod 'LeagueAPI'
+
+  target 'ZedTests' do
+    inherit! :search_paths
+  end
+
+  target 'ZedUITests' do
+  end
+
+end
