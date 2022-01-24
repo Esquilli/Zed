@@ -41,7 +41,7 @@ final class RiotRepository: RiotRepositoryProtocol {
 3. Run the simulator
 
 ## To-Do
-- [] Update ChampionsRepository to conform to NSFetchResultsController
+- [ ] Update ChampionsRepository to conform to NSFetchResultsController
 
 ## Licence
 Zed is released under the MIT license. See [LICENSE](./LICENSE) for details.
