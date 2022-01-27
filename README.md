@@ -1,6 +1,6 @@
 <div align="center">
     <h1>Zed</h1>
-    <i>A simple app that shows how to use SwiftUI and CoreData</i>
+    <i>A simple app that shows how to use SwiftUI, CoreDat, and Riot API</i>
 </div>
 
 <br />
